@@ -5,7 +5,7 @@
 }
 
 :root {
-    --color-001: white;
+    --color-001: rgb(7, 155, 241);
 }
 
 body {
@@ -31,7 +31,7 @@ a {
 /* NAVBAR STYLING */
 
 .navbar {
-    background-color: var(--color-001);
+    background-color: white;
     color: white;
 }
 
@@ -55,7 +55,7 @@ a {
 
 .nav-links  a:hover {
     text-decoration: none;
-    color: rgb(7, 155, 241);
+    color: var(--color-001);
 }
 
 
@@ -110,6 +110,10 @@ a {
     width: 200px;
 }
 
+.about-main-text {
+    font-weight: 300;
+}
+
 /* PORTFOLIO */
 .project-item img {
     max-width: 100%;
@@ -140,4 +144,10 @@ a {
 .project-links i {
     color: black;
     font-size: 30px;
+}
+
+.project-links i:hover {
+    color: var(--color-001);
+    font-size: 30px;
+    transition: color 0.3s ease-in-out;
 }

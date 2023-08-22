@@ -20,15 +20,15 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-4">
-              <img src="/imgs/IMG_0703.jpg" className="img-fluid" />
+              <img src="/imgs/IMG_2963.jpg" className="img-fluid" />
             </div>
             <div className="col-lg-7 col-md-12 about-text">
               <div className="main-title">
                 <h1>About me</h1>
               </div>
               <hr className="about-splitter mb-4"></hr>
-              <div>
-                <p>I am a machine learning engineer and avid programmer. I studied at Florida State University where I got my B.S. in Pure Mathematics and my M.S. in Computer Science.
+              <div className="about-main-text">
+                <p>I am a machine learning engineer and an avid programmer. I studied at Florida State University where I got my B.S. in Pure Mathematics and my M.S. in Computer Science.
                 </p>
                 <p>In my spare time I like to experiment with different projects, and I'm currently pursuing an MLOps specialization. Point is, I love to learn.
                 </p>
@@ -45,7 +45,7 @@ const Home = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
-              <h1 className="display-5 text-uppercase">Portfolio</h1>
+              <h1 className="main-title text-uppercase">Portfolio</h1>
               <p style= { {'font-weight': '300' } }>My favorite projects!</p>
             </div>
           </div>
