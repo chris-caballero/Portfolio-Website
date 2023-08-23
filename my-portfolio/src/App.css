@@ -19,6 +19,14 @@ a {
     display: inline-block;
 }
 
+.gap-5 {
+    gap: 0px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
 .gap-30 {
     gap: 30px;
 }
@@ -27,13 +35,18 @@ a {
     width: 1200px;
 }
 
+.main-content-splitter {
+    color: rgb(145, 143, 143);
+}
+
+.header-class {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+}
 
 /* NAVBAR STYLING */
-
-.navbar {
-    background-color: white;
-    color: white;
-}
 
 .navbar-brand a {
     color: black;
@@ -95,6 +108,13 @@ a {
 }
 
 /* ABOUT SECTION */
+/* 
+.about-section {
+    background-image: url("../public/imgs/space-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} */
 
 .about-me h1 {
     font-size: 30px;
@@ -114,9 +134,49 @@ a {
     font-weight: 300;
 }
 
+.about-links {
+    list-style: none;
+    padding-left: 0px;
+    gap: 10px;
+}
+
+.about-link-button {
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 8px 15px;
+    border: solid 1px;
+    border-radius: 8px;
+    color: black;
+}
+
+.about-link-button:hover {
+    color: var(--color-001);
+    transition: color 0.3s ease-in-out;
+}
+
 /* PORTFOLIO */
+
+.portfolio-splitter {
+    width: 200px;
+    margin: 0 auto;
+}
+
 .project-item img {
     max-width: 100%;
+    height: auto;
+}
+
+#fraud-img {
+    max-width: auto;
+    height: auto;
+}
+
+#ticket-img {
+    border: solid 1px lightgray;
+    padding: 50px 0px;
+}
+
+#emission-img {
     height: auto;
 }
 
@@ -151,3 +211,9 @@ a {
     font-size: 30px;
     transition: color 0.3s ease-in-out;
 }
+
+
+
+
+
+
