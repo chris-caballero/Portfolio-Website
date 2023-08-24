@@ -217,13 +217,11 @@ a {
 }
 
 .project-item img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
 }
 
 #fraud-img {
-    max-width: auto;
-    height: auto;
     padding: 15px;
     box-shadow: var(--item-shadow);
 }
@@ -234,7 +232,6 @@ a {
 }
 
 #emission-img {
-    height: auto;
     padding: 20px;
     box-shadow: var(--item-shadow);
 }
