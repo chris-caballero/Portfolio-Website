@@ -117,7 +117,7 @@ const Home = () => {
             technologies="Python, Numpy, Matplotlib"
             category="Word Embeddings, Natural Language Processing (NLP), Data Visualization"
             date="January 2022"
-            githubLink="https://github.com/chris-caballero/Carbon-Footprint-LSOA"
+            githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"
             imgSrc="/imgs/skip-gram-slow.gif"
             imgAlt="Skip Gram Implementation"
             imgID="skip-gram-img"
