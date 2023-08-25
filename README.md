@@ -64,4 +64,4 @@ Connect with me:
 - [Kaggle](https://www.kaggle.com/chriscaballero)
 - Email: chrismcaballero@gmail.com
 
-Thank you for visiting my portfolio!
+Thanks for visiting my portfolio!
