@@ -53,7 +53,7 @@ const Header = () => {
       <nav className="container navbar navbar-expand-lg navbar-light">
         <div className="container d-flex">
           {/* Logo */}
-          <a href="/" className="navbar-brand"><img src="/imgs/logo-2.png" alt="Logo" id="logo" /></a>
+          <a href="/" className="navbar-brand"><img src="/imgs/logo.png" alt="Logo" id="logo" /></a>
           
           {/* Navbar Toggler */}
           <button
