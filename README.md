@@ -1,67 +1,46 @@
-# My Portfolio
+# Getting Started with Create React App and Redux
 
-Welcome to my portfolio website! This repository contains the code for my personal portfolio showcasing my projects, skills, and contact information. This portfolio is designed and developed using React on Nodejs.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-## Table of Contents
+## Available Scripts
 
-- [About](#about)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Contact](#contact)
+In the project directory, you can run:
 
-## About
+### `npm start`
 
-This portfolio website was created with the intention of presenting my various coding projects, sharing my experiences, and connecting with others who share similar interests. The website provides an interactive platform for users to learn about my background, explore my projects, and get in touch with me.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Features
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **Responsive Design:** The website is designed to be responsive, ensuring a seamless user experience across different devices and screen sizes.
+### `npm test`
 
-- **Project Showcase:** The portfolio showcases a variety of my coding projects, each with its own description, technologies used, and relevant links.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **Smooth Scrolling:** The navigation menu allows users to smoothly scroll to different sections of the website, enhancing the overall user experience. I wanted to keep the design intuitive and simple so potential recruiters wouldn't have to worry at all about finding anything.
+### `npm run build`
 
-- **Contact Information:** The footer section provides links to my social media profiles and other contact details for users to connect with me.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Getting Started
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-To run the portfolio website locally on your machine, follow these steps:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. Clone this repository to your local machine:
-   ```
-   git clone https://github.com/chris-caballero/portfolio-website.git
-   ```
+### `npm run eject`
 
-2. Navigate to the project directory:
-   ```
-   cd portfolio-website
-   ```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-3. Install the required dependencies:
-   ```
-   npm install
-   ```
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-4. Start the development server:
-   ```
-   npm start
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-5. Open your web browser and navigate to `http://localhost:3000` to view the website.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Usage
+## Learn More
 
-Feel free to explore the portfolio to learn more about me, my skills, and my projects. You can navigate through the different sections using the navigation menu and find detailed information about each project.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-## Contact
-
-Connect with me:
-
-- [GitHub](https://github.com/chris-caballero)
-- [LinkedIn](https://www.linkedin.com/in/christopher-caballero-696b6b219/)
-- [Kaggle](https://www.kaggle.com/chriscaballero)
-- Email: chrismcaballero@gmail.com
-
-Thank you for visiting my portfolio!
+To learn React, check out the [React documentation](https://reactjs.org/).
