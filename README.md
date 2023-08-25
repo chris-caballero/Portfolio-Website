@@ -65,7 +65,3 @@ Connect with me:
 - Email: chrismcaballero@gmail.com
 
 Thank you for visiting my portfolio!
-
----
-
-**Note:** This README is just a simple template. Feel free to customize it according to your preferences and the specific details of your portfolio website.
