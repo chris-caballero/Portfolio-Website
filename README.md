@@ -1,5 +1,3 @@
-Certainly, here's a simple README file that you could use for your portfolio website:
-
 # Christopher Caballero's Portfolio
 
 Welcome to my portfolio website! This repository contains the code for my personal portfolio showcasing my projects, skills, and contact information. This portfolio is designed and developed using React on Node.js.
