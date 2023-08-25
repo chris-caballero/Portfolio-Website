@@ -55,10 +55,6 @@ To run the portfolio website locally on your machine, follow these steps:
 
 Feel free to explore the portfolio to learn more about me, my skills, and my projects. You can navigate through the different sections using the navigation menu and find detailed information about each project.
 
-## Contributing
-
-Contributions to this portfolio website are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
-
 ## Contact
 
 Connect with me:
