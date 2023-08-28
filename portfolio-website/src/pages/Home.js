@@ -101,7 +101,7 @@ const Home = () => {
             webLink="https://chris-caballero.github.io/Ticket-Classification-App"
             imgSrc="/imgs/ticket-01.png"
             imgAlt="Support Ticket Classification App"
-            imgID="ticket-img"
+            imgID="ticket-01"
           />
           <PortfolioItem
             title="Credit Card Fraud Detection"
