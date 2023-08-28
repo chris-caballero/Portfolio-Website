@@ -98,7 +98,7 @@ const Home = () => {
             date="August 2023"
             githubLink="https://github.com/chris-caballero/Ticket-Classification-App"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/ticket-classification/general"
-            webLink="https://chris-caballero.github.io/Ticket-Classification-App/"
+            webLink="https://chris-caballero.github.io/Ticket-Classification-App"
             imgSrc="/imgs/ticket-01.png"
             imgAlt="Support Ticket Classification App"
             imgID="ticket-img"
