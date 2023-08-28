@@ -99,9 +99,9 @@ const Home = () => {
             githubLink="https://github.com/chris-caballero/Ticket-Classification-App"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/ticket-classification/general"
             webLink="https://chris-caballero.github.io/Ticket-Classification-App"
-            imgSrc="/imgs/ticket-01.png"
+            imgSrc="/imgs/ticket-01.webp"
             imgAlt="Support Ticket Classification App"
-            imgID="ticket-01"
+            imgID="ticket-img"
           />
           <PortfolioItem
             title="Credit Card Fraud Detection"
