@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const PortfolioItem = ({ title, description, technologies, category, date, githubLink, dockerLink, imgSrc, imgAlt, imgID }) => {
+const PortfolioItem = ({ title, description, technologies, category, date, githubLink, dockerLink, webLink, imgSrc, imgAlt, imgID }) => {
   // State to track window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -53,6 +53,13 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
               <li>
                 <a href={dockerLink} target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-docker" aria-hidden="true" />
+                </a>
+              </li>
+            )}
+            {webLink && (
+              <li>
+                <a href={webLink} target="_blank" rel="noopener noreferrer">
+                  <i className="fa-solid fa-globe" aria-hidden="true" />
                 </a>
               </li>
             )}
