@@ -55,7 +55,7 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-4">
-              <img src="/imgs/me-2.jpg" className="img-fluid" alt="Me" />
+              <img src="/imgs/me-2-min.webp" className="img-fluid" alt="Me" />
             </div>
             <div className="col-lg-7 col-md-12 about-text mt-4">
               <div className="main-title">
@@ -98,7 +98,7 @@ const Home = () => {
             date="August 2023"
             githubLink="https://github.com/chris-caballero/Ticket-Classification-App"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/ticket-classification/general"
-            imgSrc="/imgs/ticket-01.png"
+            imgSrc="/imgs/ticket-01.webp"
             imgAlt="Support Ticket Classification App"
             imgID="ticket-img"
           />
@@ -109,7 +109,7 @@ const Home = () => {
             category="Classification, Anomaly Detection"
             date="June 2023"
             githubLink="https://github.com/chris-caballero/Fraud-Transaction-Detection"
-            imgSrc="/imgs/credit-card-fraud.png"
+            imgSrc="/imgs/credit-card-fraud.webp"
             imgAlt="Credit Card Fraud Detection"
             imgID="fraud-img"
           />
@@ -121,7 +121,7 @@ const Home = () => {
             date="July 2023"
             githubLink="https://github.com/chris-caballero/Carbon-Footprint-LSOA"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/carbon-footprint-analysis/general"
-            imgSrc="/imgs/emission-01.png"
+            imgSrc="/imgs/emission-01.webp"
             imgAlt="Carbon Emission Analysis"
             imgID="emission-img"
           />
@@ -132,7 +132,7 @@ const Home = () => {
             category="Word Embeddings, Natural Language Processing (NLP), Data Visualization"
             date="January 2022"
             githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"
-            imgSrc="/imgs/skip-gram-slow.gif"
+            imgSrc="/imgs/skip-gram-slow-min.gif"
             imgAlt="Skip Gram Implementation"
             imgID="skip-gram-img"
           />
