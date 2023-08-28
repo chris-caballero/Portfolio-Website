@@ -1,6 +1,6 @@
-# Christopher Caballero's Portfolio
+# My Portfolio
 
-Welcome to my portfolio website! This repository contains the code for my personal portfolio showcasing my projects, skills, and contact information. This portfolio is designed and developed using React on Node.js.
+Welcome to my portfolio! This repository contains the code for my personal portfolio showcasing my projects, skills, and contact information. This portfolio is designed and developed using React on Node.js. You can find my portfolio site at [chrismcaballero.com](https://www.chrismcaballero.com).
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ This portfolio website was created with the intention of presenting my various c
 
 ## Getting Started
 
-To run the portfolio website locally on your machine, follow these steps:
+If you want to use my website as a reference, you can clone this repository and run it with the following instructions:
 
 1. Clone this repository to your local machine:
    ```
