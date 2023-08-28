@@ -30,10 +30,10 @@ const Header = () => {
       // Update header styles based on scroll position
       if (shrink) {
         navbar.style.backgroundColor = "white";
-        navbar.style.padding = "0 0";
+        navbar.style.paddingTop = "0";
       } else {
         navbar.style.backgroundColor = "white";
-        navbar.style.padding = "25px 0";
+        navbar.style.paddingTop = "1.25rem";
       }
     }
 
@@ -50,7 +50,7 @@ const Header = () => {
 
   return (
     <header className="header-class align-items-center">
-      <nav className="container navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container d-flex">
           {/* Logo */}
           <a href="/" className="navbar-brand"><img src="/imgs/logo.png" alt="Logo" id="logo" /></a>
