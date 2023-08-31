@@ -133,6 +133,7 @@ const Home = () => {
             category="Word Embeddings, Natural Language Processing (NLP), Data Visualization"
             date="January 2022"
             githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"
+            dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/skip-gram-notebook/general"
             imgSrc="/imgs/skip-gram-slow-min.gif"
             imgAlt="Skip Gram Implementation"
             imgID="skip-gram-img"

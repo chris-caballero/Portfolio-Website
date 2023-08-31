@@ -21,6 +21,7 @@ const Header = () => {
   // Effect to update the header on scroll
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
+    const header = document.querySelector(".header-class");
     
     // Scroll event handler
     const handleScroll = () => {
@@ -29,11 +30,12 @@ const Header = () => {
 
       // Update header styles based on scroll position
       if (shrink) {
-        navbar.style.backgroundColor = "white";
         navbar.style.paddingTop = "0";
+        header.style.boxShadow = "-20px 25px 50px 10px rgba(158, 158, 158, 0.3)";
+
       } else {
-        navbar.style.backgroundColor = "white";
         navbar.style.paddingTop = "1.25rem";
+        header.style.boxShadow = "none";
       }
     }
 
@@ -49,9 +51,9 @@ const Header = () => {
   // The header class contains the navbar for moving around the page (single page implementation)
 
   return (
-    <header className="header-class align-items-center">
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="container d-flex">
+    <header className="header-class justify-content-center">
+      <nav className="navbar navbar-expand-lg navbar-light navbar-container">
+        <div className="container d-flex justify-content-between">
           {/* Logo */}
           <a href="/" className="navbar-brand"><img src="/imgs/logo.png" alt="Logo" id="logo" /></a>
           
