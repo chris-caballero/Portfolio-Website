@@ -25,13 +25,6 @@ jobs:
       - name: Build app
         run: npm run build
         working-directory: ./portfolio-website
-
-      - name: Ensure build directory exists and copy CNAME file
-        run: |
-          mkdir -p ./portfolio-website/build
-          cp CNAME ./portfolio-website/build/
-          
-        working-directory: ./portfolio-website
       
       - name: Deploy it
         uses: peaceiris/actions-gh-pages@v3
