@@ -26,10 +26,14 @@ jobs:
         run: npm run build
         working-directory: ./portfolio-website
       
+      - name: Copy CNAME file to gh-pages branch
+        run: |
+          cp CNAME ./portfolio-website/build/
+        working-directory: ./portfolio-website
+      
       - name: Deploy it
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./portfolio-website/build
           publish_branch: gh-pages
-          keep_files: CNAME
