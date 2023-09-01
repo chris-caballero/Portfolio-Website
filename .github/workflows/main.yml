@@ -25,6 +25,9 @@ jobs:
       - name: Build app
         run: npm run build
         working-directory: ./portfolio-website
+
+      - name: Copy CNAME file
+        run: cp CNAME ./portfolio-website/build/
       
       - name: Deploy it
         uses: peaceiris/actions-gh-pages@v3
