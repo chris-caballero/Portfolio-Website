@@ -27,8 +27,7 @@ jobs:
         working-directory: ./portfolio-website
       
       - name: Copy CNAME file to gh-pages branch
-        run: |
-          cp CNAME ./portfolio-website/build/
+        run: cp CNAME ./portfolio-website/build/
         working-directory: ./portfolio-website
       
       - name: Deploy it
