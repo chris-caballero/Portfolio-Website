@@ -32,3 +32,4 @@ jobs:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./portfolio-website/build
           publish_branch: gh-pages
+          keep_files: CNAME
