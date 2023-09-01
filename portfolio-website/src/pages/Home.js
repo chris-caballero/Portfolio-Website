@@ -105,11 +105,12 @@ const Home = () => {
           />
           <PortfolioItem
             title="Credit Card Fraud Detection"
-            description="Trained three models to flag fraudulent transactions. Used class imbalance techniques and outlier removal to improve model performance."
+            description="Trained three models to flag fraudulent transactions. Used class imbalance techniques and outlier removal to improve model performance. Additionally trained XGBoost for optimized performance on this task. Soon to be deployed on GCP for serving requests."
             technologies="Python, scikit-learn, pandas, matplotlib"
             category="Classification, Anomaly Detection"
             date="June 2023"
             githubLink="https://github.com/chris-caballero/Fraud-Transaction-Detection"
+            webLink="https://chris-caballero.github.io/Fraud-Transaction-Detection"
             imgSrc="/imgs/credit-card-fraud.webp"
             imgAlt="Credit Card Fraud Detection"
             imgID="fraud-img"
