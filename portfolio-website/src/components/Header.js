@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Header = () => {
+  const [shrinkHeader, setShrinkHeader] = useState(false);
+
   // Function to scroll to the specified target section
   const customScroll = (event, target) => {
     event.preventDefault();
@@ -20,23 +22,11 @@ const Header = () => {
 
   // Effect to update the header on scroll
   useEffect(() => {
-    const navbar = document.querySelector(".navbar");
-    const header = document.querySelector(".header-class");
-    
     // Scroll event handler
     const handleScroll = () => {
-      // Determine whether to shrink the header
-      const shrink = window.scrollY > 111;
-
+      console.log(window.scrollY);
       // Update header styles based on scroll position
-      if (shrink) {
-        navbar.style.paddingTop = "0";
-        header.style.boxShadow = "-20px 25px 50px 10px rgba(158, 158, 158, 0.3)";
-
-      } else {
-        navbar.style.paddingTop = "1.25rem";
-        header.style.boxShadow = "none";
-      }
+      setShrinkHeader(window.scrollY > 111);
     }
 
     // Add scroll event listener when the component mounts
@@ -46,13 +36,22 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, []);
+
+  // Define the header styles based on the state
+  const headerStyles = {
+    boxShadow: shrinkHeader ? "-20px 25px 50px 10px rgba(158, 158, 158, 0.3)" : "none",
+  };
+
+  const navbarStyles = {
+    paddingTop: shrinkHeader ? "0" : "1.25rem",
+  }
 
   // The header class contains the navbar for moving around the page (single page implementation)
 
   return (
-    <header className="header-class justify-content-center">
-      <nav className="navbar navbar-expand-lg navbar-light navbar-container">
+    <header className="header-class justify-content-center" style={headerStyles}>
+      <nav className="navbar navbar-expand-lg navbar-light navbar-container" style={navbarStyles}>
         <div className="container d-flex justify-content-between">
           {/* Logo */}
           <a href="/" className="navbar-brand"><img src="/imgs/logo.png" alt="Logo" id="logo" /></a>
