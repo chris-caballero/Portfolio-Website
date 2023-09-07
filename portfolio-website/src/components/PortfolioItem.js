@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const PortfolioItem = ({ title, description, technologies, category, date, githubLink, dockerLink, webLink, imgSrc, imgAlt, imgID }) => {
+const PortfolioItem = ({ title, description, technologies, category, date, githubLink, dockerLink, webLink, imgSrc, imgAlt, imgID, gifID }) => {
   // State to track window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -25,9 +25,9 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
       {/* Portfolio Item Container */}
       <div className="row justify-content-between align-items-center project-item py-5">
         {/* Conditionally render splitter based on window width and imgID */}
-        {(windowWidth < 765 && imgID !== "ticket-img") && <hr className="portfolio-item-splitter mb-5"/>}
+        {(windowWidth < 991 && imgID !== "ticket-img") && <hr className="portfolio-item-splitter mb-5"/>}
         {/* Project Content */}
-        <div className="col-md-6 order-2 order-md-1">
+        <div className="col-lg-6 order-2 order-lg-1">
           {/* Project Title */}
           <h2 className="mb-4">{title}</h2>
           {/* Project Description */}
@@ -66,8 +66,30 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
           </ul>
         </div>
         {/* Project Image */}
-        <div className="col-md-4 order-1 order-md-2 mb-4">
-          <img src={imgSrc} alt={imgAlt} id={imgID} />
+        <div className="col-lg-4 order-1 order-lg-2 mb-4">
+        {gifID && (
+          <img src={imgSrc} alt={imgAlt} id={gifID} />
+        )}
+        {!gifID && (
+          <img
+            srcSet={`
+              ${imgSrc}-416.webp 416w,
+              ${imgSrc}-350.webp 320w,
+              ${imgSrc}-486.webp 486w,
+              ${imgSrc}-696.webp 696w,
+              ${imgSrc}-416.webp
+            `}
+            sizes={`
+              (max-width: 767px) 486px,
+              (max-width: 990px) 696px,
+              (max-width: 1260px) 320px,
+              (min-width: 1261px) 416px,
+            `}
+            src={`${imgSrc}-416.webp`}
+            alt={imgAlt}
+            id={imgID}
+          />
+        )}
         </div>
       </div>
     </>

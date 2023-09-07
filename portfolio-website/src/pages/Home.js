@@ -55,7 +55,24 @@ const Home = () => {
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-lg-4">
-              <img src="/imgs/me-2-min.webp" className="img-fluid" alt="Me" />
+              <img
+                srcSet="
+                  /imgs/about_me/me-720.webp 720w,
+                  /imgs/about_me/me-540.webp 540w,
+                  /imgs/about_me/me-350.webp 350w,
+                  /imgs/about_me/me-420.webp 420w
+                "
+                sizes="
+                  (max-width: 350px) 100vw,
+                  (max-width: 540px) 350px,
+                  (max-width: 767px) 540px,
+                  (max-width: 991px) 720px,
+                  (min-width: 1201px) 420px,
+                  (max-width: 1200px) 350px
+                "
+                src="/imgs/about_me/me-420.webp"
+                alt="Description"
+              />
             </div>
             <div className="col-lg-7 col-md-12 about-text mt-4">
               <div className="main-title">
@@ -99,7 +116,7 @@ const Home = () => {
             githubLink="https://github.com/chris-caballero/Ticket-Classification-App"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/ticket-classification/general"
             webLink="https://chris-caballero.github.io/Ticket-Classification-App"
-            imgSrc="/imgs/ticket-01.webp"
+            imgSrc="/imgs/portfolio/support-ticket/ticket"
             imgAlt="Support Ticket Classification App"
             imgID="ticket-img"
           />
@@ -111,7 +128,7 @@ const Home = () => {
             date="June 2023"
             githubLink="https://github.com/chris-caballero/Fraud-Transaction-Detection"
             webLink="https://chris-caballero.github.io/Fraud-Transaction-Detection"
-            imgSrc="/imgs/credit-card-fraud.webp"
+            imgSrc="/imgs/portfolio/fraud-detection/fraud"
             imgAlt="Credit Card Fraud Detection"
             imgID="fraud-img"
           />
@@ -123,7 +140,7 @@ const Home = () => {
             date="July 2023"
             githubLink="https://github.com/chris-caballero/Carbon-Footprint-LSOA"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/carbon-footprint-analysis/general"
-            imgSrc="/imgs/emission-01.webp"
+            imgSrc="/imgs/portfolio/carbon-emission/emission"
             imgAlt="Carbon Emission Analysis"
             imgID="emission-img"
           />
@@ -135,9 +152,9 @@ const Home = () => {
             date="January 2022"
             githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/skip-gram-notebook/general"
-            imgSrc="/imgs/skip-gram-slow-min.gif"
+            imgSrc="/imgs/portfolio/skipgram.gif"
             imgAlt="Skip Gram Implementation"
-            imgID="skip-gram-img"
+            gifID="skip-gram-img"
           />
           {/* You can add more PortfolioItem components for other projects */}
         </div>
