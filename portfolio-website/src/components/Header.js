@@ -26,7 +26,7 @@ const Header = () => {
     const handleScroll = () => {
       // Check if the inner width is greater than or equal to 991px
       if (window.innerWidth >= 991) {
-        const shrinkThreshold = isShrunk ? 0 : 111;
+        const shrinkThreshold = isShrunk ? 55 : 111;
         const shrink = window.scrollY > shrinkThreshold;
         setIsShrunk(shrink);
       } else {
@@ -49,7 +49,7 @@ const Header = () => {
     };
   }, [isShrunk]);
 
-  return (
+  return <>
     <header className={`header-class justify-content-center ${isShrunk ? 'shrink' : ''}`}>
       <nav className="navbar navbar-expand-lg navbar-light navbar-container">
         <div className="container d-flex justify-content-between">
@@ -73,7 +73,8 @@ const Header = () => {
         </div>
       </nav>
     </header>
-  );
+
+  </>;
 }
 
 export default Header;
