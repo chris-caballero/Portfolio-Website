@@ -70,11 +70,10 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
         {gifID && (
           <div className="video-wrapper">
             <video autoPlay loop muted playsInline>
-              <source src={`${imgSrc}.webm`} type="video/webm" alt={imgAlt} id={gifID} loading="lazy" />
+              <source src={`${imgSrc}.mp4`} type="video/mp4" alt={imgAlt} id={gifID} loading="lazy" />
               <img src={`${imgSrc}.gif`} alt={imgAlt} id={gifID} loading="lazy" />
             </video>
           </div>
-
         )}
         {!gifID && (
           <img
