@@ -30,7 +30,7 @@ const Header = () => {
         const shrink = window.scrollY > shrinkThreshold;
         setIsShrunk(shrink);
       } else {
-        setIsShrunk(true); // Apply the "shrink" class
+        setIsShrunk(false); // Apply the "shrink" class
       }
     };
 
