@@ -326,29 +326,29 @@ a {
 
 /* Media query for viewport width up to 767px */
 @media screen and (max-width: 767px) {
-    .project-item img {
+    .project-item img, .project-item video {
         width: 486px;
     }
 }
 
 /* Media query for viewport width between 768px and 990px */
 @media screen and (min-width: 768px) and (max-width: 990px) {
-    .project-item img {
-        width: 696px;
+    .project-item img, .project-item video {
+        width: 486px;
     }
 }
 
 /* Media query for viewport width between 991px and 1260px */
 @media screen and (min-width: 991px) and (max-width: 1260px) {
-    .project-item img {
-        width: 320px;
+    .project-item img, .project-item video {
+        width: 486px;
     }
 }
 
 /* Media query for viewport width 1261px or greater */
 @media screen and (min-width: 1261px) {
-    .project-item img {
-        width: 416px;
+    .project-item img, .project-item video {
+        width: 486px;
     }
 }
 
