@@ -94,7 +94,6 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
             src={`${imgSrc}-416.webp`}
             alt={imgAlt}
             id={imgID}
-            loading="lazy"
           />
         )}
         </div>

@@ -74,7 +74,6 @@ const Home = () => {
                 alt="Portrait"
                 aria-label="Portrait of Christopher Caballero"
                 className='about-img align-self-center'
-                preload="true"
               />
             </div>
             <div className="col-lg-7 col-md-12 about-text mt-4">
