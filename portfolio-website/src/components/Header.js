@@ -1,75 +1,59 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+
+const NavbarLinks = ({ customScroll }) => (
+  <ul className="navbar-nav ml-auto gap-20">
+    <li className="nav-item"><a className="nav-link" href="#root" onClick={(event) => customScroll(event, "#root")}>Home</a></li>
+    <li className="nav-item"><a className="nav-link" href="#about" onClick={(event) => customScroll(event, "#about")}>About</a></li>
+    <li className="nav-item"><a className="nav-link" href="#portfolio" onClick={(event) => customScroll(event, "#portfolio")}>Portfolio</a></li>
+    <li className="nav-item"><a className="nav-link" href="#footer" onClick={(event) => customScroll(event, "#footer")}>Contact</a></li>
+  </ul>
+);
 
 const Header = () => {
+  const [isShrunk, setIsShrunk] = useState(false);
 
-  // Function to scroll to the specified target section
   const customScroll = (event, target) => {
     event.preventDefault();
     const targetSection = document.querySelector(target);
     if (targetSection) {
-      // Calculate offset to account for fixed header height
       const height = document.querySelector('.navbar').clientHeight;
       const offset = targetSection.offsetTop - height;
-
-      // Smooth scroll to the target section
-      window.scrollTo({
-        top: offset,
-        behavior: "smooth"
-      });
+      window.scrollTo({ top: offset, behavior: "smooth" });
     }
   };
 
-  // Effect to update the header on scroll
   useEffect(() => {
-    const navbar = document.querySelector(".navbar");
-    const header = document.querySelector(".header-class");
-
-    let isShrunk = false;
-    
-    // Scroll event handler
     const handleScroll = () => {
-      console.log(window.scrollY)
-
-      const shrinkThreshold = isShrunk ? 0 : 111; 
-
-      // Determine whether to shrink the header
-      const shrink = window.scrollY > shrinkThreshold;
-
-      // Update header styles based on scroll position
-      if (shrink) {
-        navbar.style.paddingTop = "0";
-        header.style.boxShadow = "-20px 25px 50px 10px rgba(158, 158, 158, 0.3)";
-
+      // Check if the inner width is greater than or equal to 991px
+      if (window.innerWidth >= 991) {
+        const shrinkThreshold = isShrunk ? 0 : 111;
+        const shrink = window.scrollY > shrinkThreshold;
+        setIsShrunk(shrink);
       } else {
-        navbar.style.paddingTop = "1.25rem";
-        header.style.boxShadow = "none";
+        setIsShrunk(true); // Apply the "shrink" class
       }
+    };
 
-      if (shrink !== isShrunk) {
-        isShrunk = shrink;
-      }
-
+    // Add or remove the scroll event listener based on the inner width
+    if (window.innerWidth >= 991) {
+      window.addEventListener("scroll", handleScroll);
+    } else {
+      window.removeEventListener("scroll", handleScroll);
     }
 
-    // Add scroll event listener when the component mounts
-    window.addEventListener("scroll", handleScroll);
+    // Initial check when the component mounts
+    handleScroll();
 
-    // Remove the scroll event listener when the component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
-
-  // The header class contains the navbar for moving around the page (single page implementation)
+  }, [isShrunk]);
 
   return (
-    <header className="header-class justify-content-center">
+    <header className={`header-class justify-content-center ${isShrunk ? 'shrink' : ''}`}>
       <nav className="navbar navbar-expand-lg navbar-light navbar-container">
         <div className="container d-flex justify-content-between">
-          {/* Logo */}
           <a href="/" className="navbar-brand"><img src="/imgs/logo.png" alt="Logo" id="logo" /></a>
-          
-          {/* Navbar Toggler */}
           <button
             className="navbar-toggler"
             type="button"
@@ -78,21 +62,13 @@ const Header = () => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
-          ><span className="navbar-toggler-icon"></span>
+          >
+            <span className="navbar-toggler-icon"></span>
           </button>
         </div>
-
-        {/* Navbar list container */}
         <div className="container">
-          {/* Navbar Collapse */}
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul className="navbar-nav ml-auto gap-20">
-              {/* Navigation Links */}
-              <li className="nav-item"><a className="nav-link" href="#root" onClick={(event) => customScroll(event, "#root")}>Home</a></li>
-              <li className="nav-item"><a className="nav-link" href="#about" onClick={(event) => customScroll(event, "#about")}>About</a></li>
-              <li className="nav-item"><a className="nav-link" href="#portfolio" onClick={(event) => customScroll(event, "#portfolio")}>Portfolio</a></li>
-              <li className="nav-item"><a className="nav-link" href="#footer" onClick={(event) => customScroll(event, "#footer")}>Contact</a></li>
-            </ul>
+            <NavbarLinks customScroll={customScroll} />
           </div>
         </div>
       </nav>

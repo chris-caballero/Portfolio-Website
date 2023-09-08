@@ -36,15 +36,6 @@ a {
     color: rgb(145, 143, 143);
 }
 
-.header-class {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    height: 70;
-    box-shadow: none;
-    background-color: white;
-}
-
 .green {
     color: var(--color-003);
 }
@@ -68,11 +59,28 @@ a {
 
 /* NAVBAR STYLING */
 
+.header-class {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: 70;
+    box-shadow: none;
+    background-color: white;
+}
+
 .navbar {
     padding-top: 1.25rem;
     margin: 0 auto;
     background-color: white;
     transition: padding 0.4s ease;
+}
+
+.shrink .navbar {
+    padding-top: 0;
+}
+
+.shrink {
+    box-shadow: -20px 25px 50px 10px rgba(158, 158, 158, 0.3);
 }
 
 @media (max-width: 990px) {
