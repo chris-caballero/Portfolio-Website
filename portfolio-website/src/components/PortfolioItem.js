@@ -69,10 +69,17 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
         <div className="col-lg-4 order-1 order-lg-2 mb-4">
         {gifID && (
           <div className="video-wrapper">
-            <video autoPlay loop muted playsInline>
-              <source src={`${imgSrc}.mp4`} type="video/mp4" alt={imgAlt} id={gifID} loading="lazy" />
-              <img src={`${imgSrc}.gif`} alt={imgAlt} id={gifID} loading="lazy" />
-            </video>
+            { (
+                windowWidth < 575 &&
+                <img src={`${imgSrc}.gif`} alt={imgAlt} id={gifID} loading="lazy" />
+              ) ||
+              (
+                windowWidth >= 575 &&
+                <video autoPlay loop muted playsInline>
+                  <source src={`${imgSrc}.mp4`} type="video/mp4" alt={imgAlt} id={gifID} loading="lazy" />
+                </video>              
+              )
+            }
           </div>
         )}
         {!gifID && (
