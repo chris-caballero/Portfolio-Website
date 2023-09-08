@@ -152,7 +152,7 @@ const Home = () => {
             date="January 2022"
             githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"
             dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/skip-gram-notebook/general"
-            imgSrc="/imgs/portfolio/skipgram.gif"
+            imgSrc="/imgs/portfolio/skipgram"
             imgAlt="Skip Gram Implementation"
             gifID="skip-gram-img"
           />

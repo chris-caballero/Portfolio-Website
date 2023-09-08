@@ -68,7 +68,10 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
         {/* Project Image */}
         <div className="col-lg-4 order-1 order-lg-2 mb-4">
         {gifID && (
-          <img src={imgSrc} alt={imgAlt} id={gifID} />
+          <video autoPlay loop muted playsInline>
+            <source src={`${imgSrc}.webm`} type="video/webm" alt={imgAlt} id={gifID} loading="lazy" />
+            <img src={`${imgSrc}.gif`} alt={imgAlt} id={gifID} loading="lazy" />
+          </video>
         )}
         {!gifID && (
           <img
@@ -88,6 +91,7 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
             src={`${imgSrc}-416.webp`}
             alt={imgAlt}
             id={imgID}
+            loading="lazy"
           />
         )}
         </div>
