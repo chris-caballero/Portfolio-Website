@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 const Header = () => {
+
   // Function to scroll to the specified target section
   const customScroll = (event, target) => {
     event.preventDefault();
@@ -22,11 +23,17 @@ const Header = () => {
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
     const header = document.querySelector(".header-class");
+
+    let isShrunk = false;
     
     // Scroll event handler
     const handleScroll = () => {
+      console.log(window.scrollY)
+
+      const shrinkThreshold = isShrunk ? 0 : 111; 
+
       // Determine whether to shrink the header
-      const shrink = window.scrollY > 111;
+      const shrink = window.scrollY > shrinkThreshold;
 
       // Update header styles based on scroll position
       if (shrink) {
@@ -37,6 +44,11 @@ const Header = () => {
         navbar.style.paddingTop = "1.25rem";
         header.style.boxShadow = "none";
       }
+
+      if (shrink !== isShrunk) {
+        isShrunk = shrink;
+      }
+
     }
 
     // Add scroll event listener when the component mounts

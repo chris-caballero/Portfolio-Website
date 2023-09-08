@@ -71,7 +71,9 @@ const Home = () => {
                   (max-width: 1200px) 350px
                 "
                 src="/imgs/about_me/me-420.webp"
-                alt="Description"
+                alt="Portrait"
+                className='about-img align-self-center'
+                preload="true"
               />
             </div>
             <div className="col-lg-7 col-md-12 about-text mt-4">
