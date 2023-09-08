@@ -34,12 +34,7 @@ const Header = () => {
       }
     };
 
-    // Add or remove the scroll event listener based on the inner width
-    if (window.innerWidth >= 991) {
-      window.addEventListener("scroll", handleScroll);
-    } else {
-      window.removeEventListener("scroll", handleScroll);
-    }
+    window.addEventListener("scroll", handleScroll);
 
     // Initial check when the component mounts
     handleScroll();
