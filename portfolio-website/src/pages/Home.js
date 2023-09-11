@@ -74,6 +74,8 @@ const Home = () => {
                 alt="Portrait"
                 aria-label="Portrait of Christopher Caballero"
                 className='about-img align-self-center'
+                width="700"
+                height="850"
               />
             </div>
             <div className="col-lg-7 col-md-12 about-text mt-4">
@@ -124,9 +126,9 @@ const Home = () => {
           />
           <PortfolioItem
             title="Credit Card Fraud Detection"
-            description="Trained three models to flag fraudulent transactions. Used class imbalance techniques and outlier removal to improve model performance. Additionally trained XGBoost for optimized performance on this task. Soon to be deployed on GCP for serving requests."
-            technologies="Python, scikit-learn, pandas, matplotlib"
-            category="Classification, Anomaly Detection"
+            description="I used GCP AI Platform train and deploy an optimized XGBoost model on my processed dataset. Then I created a Google Cloud Function to send inference requests to my hosted model. Additionally, I performed comparative analysis on three simpler models, also trained to flag fraudulent transactions - Logistic Regression, Random Forest and SVC."
+            technologies="Python, GCP AI Platform, GCP Cloud Functions, Jupyter"
+            category="Classification, Anomaly Detection, Imbalanced Data"
             date="June 2023"
             githubLink="https://github.com/chris-caballero/Fraud-Transaction-Detection"
             webLink="https://chris-caballero.github.io/Fraud-Transaction-Detection"
@@ -137,7 +139,7 @@ const Home = () => {
           <PortfolioItem
             title="Carbon Emission Analysis"
             description="Conducted an in-depth data analysis of carbon emissions within England, focusing on examining significant insights related to the carbon data of the Lower Super Outer Areas (LSOAs)."
-            technologies="Python, Docker, GeoPandas"
+            technologies="Python, Docker, GeoPandas, Jupyter"
             category="Data Analysis, Geospatial Analysis"
             date="July 2023"
             githubLink="https://github.com/chris-caballero/Carbon-Footprint-LSOA"
@@ -148,8 +150,8 @@ const Home = () => {
           />
           <PortfolioItem
             title="Skip Gram Implementation"
-            description="My first ever project in Machine Learning! Here I implemented the Skip Gram model, the grandfather of modern language models and embeddings. I created functions for both forward and backward passes, along with custom callbacks and visualizations for understanding the movement of word vectors as they converge - hence the gif. It was great getting a look under-the-hood of this model and break into the field!"
-            technologies="Python, Numpy, Matplotlib"
+            description="My first ever project in Machine Learning! Here I implemented the Skip Gram model, the grandfather of modern language models and embeddings. I created functions for both forward and backward passes, along with custom callbacks and visualizations for understanding the movement of word vectors as they converge - hence the clip. It was great getting a look under-the-hood of this model and break into the field!"
+            technologies="Python, Numpy, Matplotlib, Jupyter"
             category="Word Embeddings, Natural Language Processing (NLP), Data Visualization"
             date="January 2022"
             githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"

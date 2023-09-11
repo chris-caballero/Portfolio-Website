@@ -24,19 +24,13 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if the inner width is greater than or equal to 991px
-      if (window.innerWidth >= 991) {
-        const shrinkThreshold = isShrunk ? 55 : 111;
-        const shrink = window.scrollY > shrinkThreshold;
-        setIsShrunk(shrink);
-      } else {
-        setIsShrunk(true); // Apply the "shrink" class
-      }
+      const shrinkThreshold = 111;
+      const shrink = window.scrollY > shrinkThreshold;
+      setIsShrunk(shrink);
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    // Initial check when the component mounts
     handleScroll();
 
     return () => {

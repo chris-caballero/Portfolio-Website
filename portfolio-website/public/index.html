@@ -9,10 +9,14 @@
       name="my portfolio web site"
       content="This web site was created using React"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="true">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true">    
 
-    <link rel="preload" href="/imgs/about_me/me-420.webp" as="image" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap">
+
+    <link rel="preload" href="/imgs/about_me/me-540.webp" as="image" />
+    <link rel="preload" href="/imgs/logo.png" as="image" />
 
     <!-- Asynchronously load Font Awesome -->
     <link
@@ -52,7 +56,10 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+      body {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+      }
     </style>
     
     <title>Christopher Caballero</title>
