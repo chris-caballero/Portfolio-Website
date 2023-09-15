@@ -37,7 +37,7 @@ const AboutSection = () => {
                         (max-width: 1200px) 350px
                     "
                     src="/imgs/about_me/me-420.webp"
-                    alt="Portrait"
+                    alt="Portrait of Christopher Caballero"
                     aria-label="Portrait of Christopher Caballero"
                     className='about-img align-self-center'
                     width="700"

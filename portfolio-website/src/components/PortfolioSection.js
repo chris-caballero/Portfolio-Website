@@ -24,7 +24,7 @@ const PortfolioSection = () => {
                 dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/ticket-classification/general"
                 webLink="https://chris-caballero.github.io/Ticket-Classification-App"
                 imgSrc="/imgs/portfolio/support-ticket/ticket"
-                imgAlt="Support Ticket Classification App"
+                imgAlt="Support Ticket Classification App Interface"
                 imgID="ticket-img"
                 />
                 <PortfolioItem
@@ -48,7 +48,7 @@ const PortfolioSection = () => {
                 githubLink="https://github.com/chris-caballero/Carbon-Footprint-LSOA"
                 dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/carbon-footprint-analysis/general"
                 imgSrc="/imgs/portfolio/carbon-emission/emission"
-                imgAlt="Carbon Emission Analysis"
+                imgAlt="Carbon Emission Data Analysis"
                 imgID="emission-img"
                 />
                 <PortfolioItem
@@ -60,7 +60,7 @@ const PortfolioSection = () => {
                 githubLink="https://github.com/chris-caballero/Skip-Gram-Implementation"
                 dockerLink="https://hub.docker.com/repository/docker/chrismcaballero/skip-gram-notebook/general"
                 imgSrc="/imgs/portfolio/skipgram"
-                imgAlt="Skip Gram Implementation"
+                imgAlt="Skip Gram Model Visualization"
                 gifID="skip-gram-img"
                 />
                 {/* You can add more PortfolioItem components for other projects */}
