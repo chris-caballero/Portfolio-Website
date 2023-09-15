@@ -65,10 +65,6 @@ const PortfolioSection = () => {
                 />
                 {/* You can add more PortfolioItem components for other projects */}
             </div>
-
-            <script type="application/ld+json">
-                {JSON.stringify(portfolioItems)}
-            </script>
         </section>
     );
 };

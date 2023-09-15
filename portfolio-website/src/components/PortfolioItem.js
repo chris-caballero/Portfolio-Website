@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const PortfolioItem = ({ title, description, technologies, category, date, githubLink, dockerLink, webLink, imgSrc, imgAlt, imgID, gifID }) => {
-  const structuredData = {
+  const portfolioItemData = {
     "@context": "http://schema.org",
     "@type": "CreativeWork",
     "name": title,
@@ -115,6 +115,11 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
         )}
         </div>
       </div>
+
+      
+      <script type="application/ld+json">
+        {JSON.stringify(portfolioItemData)}
+      </script>
     </>
   );
 };
