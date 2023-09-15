@@ -32,6 +32,11 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
 
     handleScroll();
+    
+    if (window.location.hash) {
+      const target = window.location.hash;
+      setTimeout(() => customScroll({ preventDefault: () => {} }, target), 100);
+    }
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
