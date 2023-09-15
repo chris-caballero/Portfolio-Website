@@ -1,6 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
 const PortfolioItem = ({ title, description, technologies, category, date, githubLink, dockerLink, webLink, imgSrc, imgAlt, imgID, gifID }) => {
+  const structuredData = {
+    "@context": "http://schema.org",
+    "@type": "CreativeWork",
+    "name": title,
+    "description": description,
+    "applicationCategory": category,
+    "datePublished": date,
+    "programmingLanguage": technologies,
+    "url": webLink,
+    "codeRepository": githubLink,
+    "thumbnailUrl": `${imgSrc}-320.png`,
+    "image": `${imgSrc}-original.png`,
+    "author": {
+      "@type": "Person",
+      "name": "Christopher Caballero"
+    }
+  };
+
+
   // State to track window width
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
