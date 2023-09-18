@@ -88,9 +88,9 @@ const PortfolioItem = ({ title, description, technologies, category, date, githu
         <div className="col-lg-4 order-1 order-lg-2 mb-4">
         {gifID && (
           <div className="video-wrapper">
-            <video autoPlay loop muted playsInline poster={`${imgSrc}-thumbnail.png`}>
-              <source src={`${imgSrc}.mp4`} type="video/mp4" alt={imgAlt} id={gifID} loading="lazy" />
-            </video>              
+            <video autoPlay loop muted playsInline loading="lazy" poster={`${imgSrc}-thumbnail.png`} id={gifID}>
+              <source src={`${imgSrc}.mp4`} type="video/mp4" alt={imgAlt} />
+            </video>
           </div>
         )}
         {!gifID && (
