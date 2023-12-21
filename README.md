@@ -27,7 +27,7 @@ This portfolio website was created with the intention of presenting my various c
 
 ## Getting Started
 
-If you want to use my website as a reference, you can clone this repository and run it with the following instructions:
+If you want to use my website for reference, you can clone this repository and run it with the following instructions:
 
 1. Clone this repository to your local machine:
    ```
