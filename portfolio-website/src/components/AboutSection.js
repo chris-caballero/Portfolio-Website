@@ -57,7 +57,7 @@ const AboutSection = () => {
                     <ul className="about-links d-flex">
                     <li><a className="about-link-button text-uppercase" href="https://github.com/chris-caballero" target="_blank" rel="noopener noreferrer">Github</a></li>
                     <li><a className="about-link-button text-uppercase" href="https://www.linkedin.com/in/christopher-caballero-696b6b219/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a className="about-link-button text-uppercase" href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    <li><a className="about-link-button text-uppercase" href="/documents/resume-latest.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                     </ul>
                 </div>
                 </div>
